@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#dff3fb">
+<meta name="description" content="Abuzar Aluminium & Glass Hardware — premium architectural hardware, aluminium systems, glass fittings and installation solutions.">
+<title>Abuzar Aluminium & Glass Hardware</title>
+<style>
+:root{
+  --ink:#0c2531; --muted:#58717c; --line:#d6e6eb; --paper:#f8fcfd;
+  --sky:#dff4fb; --sky2:#bfe7f3; --blue:#2b7e9d; --deep:#123f52;
+  --white:#fff; --shadow:0 18px 50px rgba(16,66,82,.10);
+  --radius:22px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-weight:400;letter-spacing:.01em}
+a{color:inherit;text-decoration:none}.wrap{width:min(1420px,calc(100% - 48px));margin:auto}
+.topline{height:5px;background:linear-gradient(90deg,#dff4fb,#9dd9e9,#dff4fb)}
+header{position:sticky;top:0;z-index:50;background:rgba(248,252,253,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(197,220,227,.75)}
+.nav{height:76px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+.logo{font-size:15px;letter-spacing:.18em;font-weight:700;line-height:1.15}.logo small{display:block;font-size:8px;letter-spacing:.28em;color:var(--muted);margin-top:5px}
+.navlinks{display:flex;gap:25px;align-items:center;font-size:12px}.navlinks.right{justify-content:flex-end}
+.navlinks a{position:relative;padding:8px 0}.navlinks a:after{content:"";position:absolute;left:0;bottom:2px;width:0;height:1px;background:var(--blue);transition:.3s}.navlinks a:hover:after{width:100%}
+.menu{display:none;border:0;background:none;font-size:24px}
+.hero{padding:18px 0 0}.hero-media{height:clamp(430px,68vh,760px);border-radius:4px;overflow:hidden;position:relative;background:
+linear-gradient(90deg,rgba(7,36,47,.76),rgba(7,36,47,.08) 58%,rgba(255,255,255,.05)),
+url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2200&q=88') center/cover}
+.hero-copy{position:absolute;left:6%;top:50%;transform:translateY(-50%);max-width:650px;color:white}.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:10px;margin-bottom:20px;opacity:.85}
+h1{font-size:clamp(42px,6vw,88px);line-height:.94;font-weight:400;letter-spacing:-.055em;margin:0 0 24px}.hero-copy p{font-size:16px;line-height:1.65;max-width:500px;color:#edfaff}.btn{display:inline-flex;align-items:center;gap:12px;padding:14px 20px;border:1px solid currentColor;font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:.25s}.btn:hover{background:white;color:var(--ink)}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;padding:95px 0 60px}.intro h2,.section-head h2{font-size:clamp(34px,4vw,58px);line-height:1.02;font-weight:400;letter-spacing:-.04em;margin:0}.intro p{font-size:15px;line-height:1.8;color:var(--muted);margin:0}.kicker{font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:var(--blue);margin-bottom:15px}
+.feature-grid{display:grid;grid-template-columns:1.55fr .85fr;gap:12px}.feature{position:relative;min-height:520px;overflow:hidden;background:var(--sky)}.feature.small{min-height:520px}.feature img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}.feature:hover img{transform:scale(1.035)}.feature .caption{position:absolute;left:25px;right:25px;bottom:22px;color:white;text-shadow:0 1px 15px #000}.caption strong{display:block;font-size:22px;font-weight:400}.caption span{font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;padding:105px 0 28px;border-bottom:1px solid var(--line)}.section-head .sub{max-width:430px;font-size:13px;color:var(--muted);line-height:1.7}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:14px 0}.product{background:#fff;min-width:0;position:relative}.product-visual{height:285px;background:linear-gradient(145deg,#eef9fc,#d7edf4);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.product-visual svg{width:70%;height:70%;transition:.4s}.product:hover svg{transform:translateY(-5px) scale(1.04)}.badge{position:absolute;top:13px;left:13px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);background:white;padding:6px 8px}.product-info{padding:16px 14px 20px}.product-name{font-size:14px}.product-meta{display:flex;justify-content:space-between;margin-top:8px;color:var(--muted);font-size:10px}.product button{border:0;background:none;padding:0;cursor:pointer;color:var(--blue)}
+.product-row-after{margin-top:12px}.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:105px;white-space:nowrap}.marquee-track{display:inline-block;padding:22px 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;animation:scroll 24s linear infinite}@keyframes scroll{to{transform:translateX(-50%)}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.split-card{min-height:580px;padding:48px;background:var(--sky);display:flex;flex-direction:column;justify-content:space-between}.split-card.dark{background:var(--deep);color:white}.split-card h3{font-size:clamp(30px,4vw,56px);font-weight:400;line-height:1.02;letter-spacing:-.04em;margin:0}.split-card p{max-width:470px;line-height:1.75;color:var(--muted)}.dark p{color:#cfe7ef}.story-number{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.article{background:white}.article-img{height:300px;overflow:hidden}.article-img img{width:100%;height:100%;object-fit:cover;transition:.5s}.article:hover img{transform:scale(1.04)}.article-copy{padding:22px}.article-copy .date{font-size:9px;letter-spacing:.18em;color:var(--blue);text-transform:uppercase}.article-copy h3{font-weight:400;font-size:24px;line-height:1.15;margin:12px 0}.article-copy p{font-size:12px;color:var(--muted);line-height:1.7}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.review{background:white;padding:34px;min-height:245px;border-top:2px solid var(--sky2)}.stars{letter-spacing:.15em;color:var(--blue);font-size:12px}.review blockquote{font-size:18px;line-height:1.55;margin:25px 0;font-weight:400}.review cite{font-size:10px;color:var(--muted);font-style:normal;letter-spacing:.1em;text-transform:uppercase}
+.newsletter{margin-top:105px;background:var(--sky);padding:65px 7%;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.newsletter h2{font-size:clamp(32px,4vw,55px);font-weight:400;letter-spacing:-.04em;margin:0}.newsletter p{color:var(--muted);line-height:1.7}.form{display:flex;border-bottom:1px solid var(--deep);padding:8px 0}.form input{flex:1;background:none;border:0;outline:0;font:inherit;font-size:13px}.form button{border:0;background:none;font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+footer{margin-top:12px;background:white;padding:70px 0 25px}.footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:45px;padding-bottom:65px}.footer-grid h4{font-size:10px;text-transform:uppercase;letter-spacing:.18em;margin:0 0 18px}.footer-grid a,.footer-grid p{font-size:12px;line-height:2;color:var(--muted);display:block;margin:0}.footer-brand{font-size:20px;letter-spacing:.15em}.copyright{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;color:var(--muted);font-size:10px}
+#tool-cursor{position:fixed;z-index:200;pointer-events:none;display:none;width:58px;height:58px;transform:translate(-50%,-50%);transition:transform .08s linear;filter:drop-shadow(0 4px 5px rgba(0,0,0,.22))}.cursor-ring{display:none}.screwdriver{position:absolute;width:14px;height:46px;left:22px;top:5px;transform:rotate(42deg);filter:drop-shadow(0 2px 2px rgba(0,0,0,.22))}.screwdriver:before{content:"";position:absolute;width:14px;height:21px;top:0;background:#ffd21a;border:2px solid #b88d00;border-radius:4px}.screwdriver:after{content:"";position:absolute;width:5px;height:29px;top:19px;left:4.5px;background:#d8e1e4;border:1px solid #9aaeb5;border-radius:2px}.cursor-click{transform:translate(-50%,-50%) scale(.78)!important}
+.chat-toggle{position:fixed;right:24px;bottom:24px;z-index:110;border:1px solid var(--deep);background:var(--deep);color:white;border-radius:999px;padding:14px 20px;font-size:11px;letter-spacing:.08em;cursor:pointer;box-shadow:0 12px 35px rgba(14,55,69,.2)}.chat-panel{position:fixed;right:24px;bottom:82px;width:min(390px,calc(100vw - 32px));height:550px;z-index:109;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);display:none;flex-direction:column}.chat-panel.open{display:flex}.chat-head{padding:17px 18px;background:var(--sky);display:flex;justify-content:space-between;align-items:center}.chat-head strong{font-size:13px}.chat-close{border:0;background:none;font-size:20px;cursor:pointer}.messages{padding:16px;overflow:auto;flex:1;background:#fbfeff}.msg{max-width:85%;padding:11px 12px;margin:0 0 10px;font-size:12px;line-height:1.55;border-radius:12px}.bot{background:white;border:1px solid var(--line)}.user{margin-left:auto;background:var(--deep);color:white}.quick{display:flex;gap:7px;overflow:auto;padding:10px 12px;border-top:1px solid var(--line)}.quick button{white-space:nowrap;border:1px solid var(--line);background:white;padding:8px 10px;font-size:10px;cursor:pointer}.chat-form{display:flex;border-top:1px solid var(--line)}.chat-form input{flex:1;border:0;outline:0;padding:15px;font:inherit;font-size:12px}.chat-form button{width:58px;border:0;background:var(--deep);color:white;cursor:pointer}
+.modal{position:fixed;inset:0;z-index:150;background:rgba(5,28,36,.48);display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-card{width:min(620px,100%);background:white;padding:38px;position:relative;box-shadow:var(--shadow)}.modal-close{position:absolute;right:15px;top:12px;border:0;background:none;font-size:25px;cursor:pointer}.modal-card h2{font-size:42px;font-weight:400;letter-spacing:-.04em;margin:0 0 10px}.modal-card p{font-size:13px;line-height:1.7;color:var(--muted)}.signup{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px}.signup input{border:1px solid var(--line);padding:13px;outline:0}.signup button{grid-column:1/-1;background:var(--deep);color:white;border:0;padding:14px;cursor:pointer;letter-spacing:.12em;text-transform:uppercase;font-size:10px}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:var(--deep);color:white;padding:12px 18px;font-size:11px;opacity:0;pointer-events:none;transition:.3s;z-index:300}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){
+ .wrap{width:min(100% - 24px,1420px)}.nav{grid-template-columns:1fr auto}.navlinks{display:none}.menu{display:block}.hero-media{height:560px}.intro{grid-template-columns:1fr;gap:25px;padding:70px 0 45px}.feature-grid,.split{grid-template-columns:1fr}.feature,.feature.small{min-height:430px}.products{grid-template-columns:repeat(2,1fr);gap:8px}.product-visual{height:145px}.product-info{padding:11px 10px 13px}.product-name{font-size:12px}.product-meta{font-size:9px;margin-top:6px}.badge{top:8px;left:8px;font-size:8px;padding:5px 6px}.section-head{padding-top:75px;display:block}.section-head .sub{margin-top:18px}.blog-grid,.reviews{grid-template-columns:1fr}.newsletter{grid-template-columns:1fr;padding:48px 8%}.footer-grid{grid-template-columns:1fr 1fr}.copyright{display:block;line-height:2.1}.copyright span{display:block}.chat-toggle{right:15px;bottom:15px}.chat-panel{right:12px;bottom:73px}.cursor-ring{display:none}#tool-cursor{display:none}
+}
+@media(min-width:851px){body.cursor-ready{cursor:none}body.cursor-ready a,body.cursor-ready button,body.cursor-ready input,body.cursor-ready textarea,body.cursor-ready select{cursor:none}body.cursor-ready #tool-cursor{display:block}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<div id="tool-cursor"><div class="cursor-ring"></div><div class="screwdriver"></div></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">ABUZAR<small>ALUMINIUM & GLASS HARDWARE</small></a>
+    <nav class="navlinks"><a href="#shop">Shop</a><a href="#systems">Systems</a><a href="#story">Our Story</a><a href="#journal">Journal</a></nav>
+    <nav class="navlinks right"><a href="#about">About</a><a href="#contact">Contact</a><button class="menu" aria-label="Menu">☰</button></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <div class="hero-media">
+    <div class="hero-copy">
+      <div class="eyebrow">Architectural hardware · Aluminium · Glass</div>
+      <h1>Built for the details that hold everything together.</h1>
+      <p>Premium aluminium and glass hardware for homes, offices and contemporary spaces — selected for clean lines, reliable performance and lasting finish.</p>
+      <a class="btn" href="#shop">Explore hardware <span>↘</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap intro" id="about">
+  <div><div class="kicker">Abuzar / 01</div><h2>Hardware that looks as precise as the architecture around it.</h2></div>
+  <p>From glass door fittings and shower hardware to aluminium profiles, handles, locks and installation essentials, we bring the finishing details of a project into one considered collection.</p>
+</section>
+
+<section class="wrap feature-grid">
+  <article class="feature"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=86" alt="Modern interior with glass and aluminium details"><div class="caption"><span>01 / Architectural spaces</span><strong>Glass, light & clean geometry</strong></div></article>
+  <article class="feature small"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=86" alt="Contemporary building architecture"><div class="caption"><span>02 / Aluminium systems</span><strong>Made to disappear into the design</strong></div></article>
+</section>
+
+<section class="wrap" id="shop">
+  <div class="section-head"><div><div class="kicker">Shop / 02</div><h2>Selected hardware</h2></div><div class="sub">A focused collection of everyday essentials and architectural fittings. Open any product to see details, availability and enquiry options.</div></div>
+  <div class="products">
+    <article class="product" data-name="SS Glass Door Patch Fitting" data-cat="Glass Hardware"><div class="product-visual"><span class="badge">Featured</span><svg viewBox="0 0 200 200"><rect x="48" y="28" width="104" height="144" rx="6" fill="none" stroke="#2b7e9d" stroke-width="7"/><rect x="42" y="65" width="35" height="48" rx="6" fill="#f8fcfd" stroke="#123f52" stroke-width="5"/><circle cx="59" cy="89" r="8" fill="#bfe7f3"/></svg></div><div class="product-info"><div class="product-name">SS Glass Door Patch Fitting</div><div class="product-meta"><span>Glass Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product" data-name="Slim Aluminium Handle" data-cat="Handles"><div class="product-visual"><span class="badge">New</span><svg viewBox="0 0 200 200"><rect x="91" y="22" width="18" height="156" rx="9" fill="#123f52"/><rect x="73" y="42" width="54" height="10" rx="5" fill="#2b7e9d"/><rect x="73" y="148" width="54" height="10" rx="5" fill="#2b7e9d"/></svg></div><div class="product-info"><div class="product-name">Slim Aluminium Handle</div><div class="product-meta"><span>Door Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product" data-name="Floor Spring FS-90" data-cat="Door Hardware"><div class="product-visual"><svg viewBox="0 0 200 200"><rect x="47" y="58" width="106" height="86" rx="10" fill="#f8fcfd" stroke="#123f52" stroke-width="6"/><circle cx="100" cy="101" r="29" fill="#dff4fb" stroke="#2b7e9d" stroke-width="6"/><path d="M100 73v56M72 101h56" stroke="#123f52" stroke-width="4"/></svg></div><div class="product-info"><div class="product-name">Floor Spring FS-90</div><div class="product-meta"><span>Door Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product" data-name="Glass Spider Fitting" data-cat="Glass Hardware"><div class="product-visual"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="17" fill="#2b7e9d"/><path d="M100 83V35M117 100h48M100 117v48M83 100H35" stroke="#123f52" stroke-width="11" stroke-linecap="round"/><circle cx="100" cy="35" r="10" fill="#bfe7f3"/><circle cx="165" cy="100" r="10" fill="#bfe7f3"/><circle cx="100" cy="165" r="10" fill="#bfe7f3"/><circle cx="35" cy="100" r="10" fill="#bfe7f3"/></svg></div><div class="product-info"><div class="product-name">Glass Spider Fitting</div><div class="product-meta"><span>Structural Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+  </div>
+</section>
+
+<div class="marquee"><div class="marquee-track">PRECISION HARDWARE · GLASS FITTINGS · ALUMINIUM SYSTEMS · DOOR SOLUTIONS · PRECISION HARDWARE · GLASS FITTINGS · ALUMINIUM SYSTEMS · DOOR SOLUTIONS · </div></div>
+
+<section class="wrap" id="systems">
+  <div class="section-head"><div><div class="kicker">Systems / 03</div><h2>Built around your project.</h2></div><div class="sub">Repeatable product families make it easier to specify, source and finish an entire space with one visual language.</div></div>
+  <div class="split">
+    <div class="split-card"><div class="story-number">A — Aluminium</div><h3>Profiles, channels & finishing pieces.</h3><p>Clean, durable aluminium components for partitions, doors, windows and custom fabrication. Ask our team about sizes, finishes and project quantities.</p><a class="btn" href="#contact">Discuss a project</a></div>
+    <div class="split-card dark"><div class="story-number">B — Glass</div><h3>Hardware that keeps the glass visually light.</h3><p>Patch fittings, spiders, handles, clamps and shower hardware designed to keep modern glazing precise and minimal.</p><a class="btn" href="#shop">Browse glass hardware</a></div>
+  </div>
+  <div class="products product-row-after">
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><path d="M45 155L85 45h30l40 110" fill="none" stroke="#123f52" stroke-width="9"/><path d="M69 155h62" stroke="#2b7e9d" stroke-width="13" stroke-linecap="round"/><path d="M92 45h16" stroke="#bfe7f3" stroke-width="14"/></svg></div><div class="product-info"><div class="product-name">Aluminium Corner Profile</div><div class="product-meta"><span>Aluminium</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><rect x="53" y="33" width="94" height="134" rx="8" fill="none" stroke="#2b7e9d" stroke-width="7"/><path d="M76 75h48M76 100h48M76 125h30" stroke="#123f52" stroke-width="8" stroke-linecap="round"/></svg></div><div class="product-info"><div class="product-name">Glass Clamp Set</div><div class="product-meta"><span>Glass Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="65" fill="none" stroke="#123f52" stroke-width="10"/><circle cx="100" cy="100" r="35" fill="#dff4fb" stroke="#2b7e9d" stroke-width="7"/><path d="M100 35v30M165 100h-30M100 165v-30M35 100h30" stroke="#bfe7f3" stroke-width="12"/></svg></div><div class="product-info"><div class="product-name">Round Glass Handle</div><div class="product-meta"><span>Handles</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><path d="M50 58h100v84H50z" fill="none" stroke="#123f52" stroke-width="8"/><path d="M67 82h66M67 106h66" stroke="#2b7e9d" stroke-width="7"/><circle cx="83" cy="130" r="8" fill="#bfe7f3"/><circle cx="117" cy="130" r="8" fill="#bfe7f3"/></svg></div><div class="product-info"><div class="product-name">Sliding Door Roller Kit</div><div class="product-meta"><span>Sliding Systems</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+  </div>
+</section>
+
+<section class="wrap" id="story">
+  <div class="section-head"><div><div class="kicker">Our Story / 04</div><h2>From a small fitting to the finished space.</h2></div><div class="sub">Abuzar Aluminium & Glass Hardware is built around a simple idea: dependable hardware should be easy to find, easy to understand and right for the job.</div></div>
+  <div class="feature-grid" style="margin-top:12px">
+    <article class="feature"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1500&q=86" alt="Construction and architecture detail"><div class="caption"><span>Craft / Supply / Service</span><strong>Details make the difference.</strong></div></article>
+    <article class="split-card" style="min-height:520px"><div class="story-number">Our approach</div><h3>Useful advice. Honest specifications. Clean finishes.</h3><p>Whether you are fitting a single door or sourcing hardware for a larger project, our goal is to make the technical side feel straightforward.</p><a class="btn" href="#contact">Talk to Abuzar</a></article>
+  </div>
+</section>
+
+<section class="wrap" id="journal">
+  <div class="section-head"><div><div class="kicker">Journal / 05</div><h2>Ideas & guides</h2></div><div class="sub">Practical notes for choosing, installing and maintaining aluminium and glass hardware.</div></div>
+  <div class="blog-grid">
+    <article class="article"><div class="article-img"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=84" alt="Modern home"></div><div class="article-copy"><div class="date">Guide / 01</div><h3>How to choose hardware for a glass door</h3><p>Start with glass thickness, door weight, opening type and the finish you want to achieve.</p></div></article>
+    <article class="article"><div class="article-img"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=84" alt="Architecture"></div><div class="article-copy"><div class="date">Guide / 02</div><h3>Aluminium finishes: a simple project guide</h3><p>Understand where profiles, channels and finishing accessories fit into a complete installation.</p></div></article>
+    <article class="article"><div class="article-img"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=84" alt="Interior"></div><div class="article-copy"><div class="date">Guide / 03</div><h3>Small hardware details with a big visual impact</h3><p>Handles, clamps and fittings can change how a finished space feels without adding visual clutter.</p></div></article>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-head"><div><div class="kicker">Reviews / 06</div><h2>What customers say</h2></div><div class="sub">A dedicated review area is ready for your verified customer feedback.</div></div>
+  <div class="reviews">
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“Clean products, helpful guidance and the right fittings for our glass work.”</blockquote><cite>Project customer</cite></article>
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“The hardware arrived well packed and the finish matched the project beautifully.”</blockquote><cite>Home renovation</cite></article>
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“Good range for aluminium and glass work, with quick answers when we needed specifications.”</blockquote><cite>Fabrication team</cite></article>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="newsletter">
+    <div><div class="kicker">Stay in the loop</div><h2>New stock, new projects, useful updates.</h2></div>
+    <div><p>Join our channel for new arrivals, product updates and useful hardware guides.</p><form class="form" onsubmit="subscribeInline(event)"><input type="email" required placeholder="Your email address"><button>Join ↗</button></form></div>
+  </div>
+</section>
+
+<!-- Repeated product block below the major content, echoing the reference site's scrolling rhythm -->
+<section class="wrap" style="padding-bottom:90px">
+  <div class="section-head"><div><div class="kicker">More hardware / 07</div><h2>More essentials</h2></div><div class="sub">Keep browsing the core collection.</div></div>
+  <div class="products">
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><path d="M45 95h110v30H45z" fill="#dff4fb" stroke="#123f52" stroke-width="7"/><circle cx="70" cy="110" r="10" fill="#2b7e9d"/><circle cx="130" cy="110" r="10" fill="#2b7e9d"/></svg></div><div class="product-info"><div class="product-name">Glass Door Lock Body</div><div class="product-meta"><span>Locks</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><path d="M40 130L70 70h60l30 60" fill="none" stroke="#123f52" stroke-width="9"/><path d="M82 70v60M118 70v60" stroke="#2b7e9d" stroke-width="7"/></svg></div><div class="product-info"><div class="product-name">Shower Glass Bracket</div><div class="product-meta"><span>Shower Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><rect x="43" y="55" width="114" height="90" rx="8" fill="none" stroke="#123f52" stroke-width="7"/><path d="M65 100h70" stroke="#2b7e9d" stroke-width="10"/><circle cx="100" cy="100" r="15" fill="#dff4fb" stroke="#123f52" stroke-width="5"/></svg></div><div class="product-info"><div class="product-name">Mortise Handle Set</div><div class="product-meta"><span>Door Hardware</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+    <article class="product"><div class="product-visual"><svg viewBox="0 0 200 200"><path d="M55 145V55h90v90" fill="none" stroke="#123f52" stroke-width="9"/><path d="M76 76h48M76 100h48M76 124h48" stroke="#2b7e9d" stroke-width="7"/></svg></div><div class="product-info"><div class="product-name">Aluminium U-Channel</div><div class="product-meta"><span>Profiles</span><button onclick="openProduct(this)">View ↗</button></div></div></article>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footer-grid">
+  <div><div class="footer-brand">ABUZAR</div><p style="max-width:290px;margin-top:15px">Aluminium & Glass Hardware<br>Architectural fittings, systems and project essentials.</p></div>
+  <div><h4>Shop</h4><a href="#shop">Glass Hardware</a><a href="#shop">Door Hardware</a><a href="#systems">Aluminium Systems</a><a href="#shop">Handles & Locks</a></div>
+  <div><h4>Explore</h4><a href="#story">Our Story</a><a href="#journal">Blogs</a><a href="#journal">Reviews</a><a href="#about">About Us</a></div>
+  <div><h4>Connect</h4><a href="mailto:info@abuzaraluminiumandglasshardware.store">Email us</a><a href="tel:+923000000000">Call / WhatsApp</a><a href="#contact">New updates</a><a href="#top">Back to top ↑</a></div>
+</div>
+<div class="wrap copyright"><span>© 2026 Abuzar Aluminium & Glass Hardware</span><span>Built for modern spaces · Pakistan</span></div>
+</footer>
+
+<button class="chat-toggle" id="chatToggle">Chat with us</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head"><strong>Chat with us</strong><button class="chat-close" id="chatClose">×</button></div>
+  <div class="messages" id="messages"><div class="msg bot">Assalam-o-Alaikum! 👋 I’m Abuzar Hardware Assistant. Ask me about glass fittings, aluminium profiles, handles, locks, pricing, availability or project requirements.</div></div>
+  <div class="quick">
+    <button onclick="quickAsk('I need glass door hardware')">Glass door</button>
+    <button onclick="quickAsk('I need aluminium profiles')">Aluminium</button>
+    <button onclick="quickAsk('How can I get a quote?')">Get a quote</button>
+  </div>
+  <form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Write your question…"><button>↗</button></form>
+</div>
+
+<div class="modal" id="welcomeModal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="kicker">New updates</div><h2>Join our channel.</h2>
+    <p>Get new product arrivals, useful hardware guides and project updates. Add your email and phone number and we’ll keep you updated.</p>
+    <form class="signup" onsubmit="signup(event)"><input type="email" required placeholder="Email address"><input type="tel" required placeholder="Phone number"><button>Join for updates ↗</button></form>
+  </div>
+</div>
+<div class="toast" id="toast">Thank you — your request has been received.</div>
+
+<script>
+const modal=document.getElementById('welcomeModal');
+function closeModal(){modal.classList.remove('show')}
+setTimeout(()=>{modal.classList.add('show')},700);
+function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2800)}
+function signup(e){e.preventDefault();closeModal();toast('Thanks! You’re on the Abuzar updates list.')}
+function subscribeInline(e){e.preventDefault();toast('Thanks! We’ll keep you updated.');e.target.reset()}
+function openProduct(btn){const p=btn.closest('.product');toast(p.dataset.name+' — enquiry ready. Chat with us for price & availability.');document.getElementById('chatPanel').classList.add('open')}
+const toggle=document.getElementById('chatToggle'), panel=document.getElementById('chatPanel');
+toggle.onclick=()=>panel.classList.toggle('open');document.getElementById('chatClose').onclick=()=>panel.classList.remove('open');
+
+const KB=[
+  [/glass|patch|spider|clamp|shower/i,'We stock glass-door and architectural glass hardware including patch fittings, clamps, handles, spiders and shower fittings. Tell me the glass thickness and application and I can guide you to the right category.'],
+  [/aluminium|profile|channel|u channel/i,'For aluminium work, we can help with profiles, channels and finishing components. Share the profile size, finish and quantity for a project-specific recommendation.'],
+  [/handle|lock|mortise|roller|floor spring/i,'We cover handles, locks, floor springs and sliding-door components. Tell me the door type and approximate glass/aluminium specification.'],
+  [/price|cost|rate|quote|quotation/i,'For current pricing, please send the product name, required quantity and (if applicable) glass thickness/profile size. Our team can then prepare a quotation.'],
+  [/delivery|shipping|deliver/i,'For delivery, please share your city/area and required quantity. We can then advise the available delivery arrangement.'],
+  [/contact|phone|whatsapp|email/i,'You can use the Contact section on this page or ask for a quotation here. For a live team response, connect your preferred WhatsApp/email details in the site settings.'],
+  [/hello|hi|salam|assalam/i,'Wa-Alaikum-Salaam! How can I help with your aluminium or glass hardware requirement today?']
+];
+function botReply(text){for(const [re,ans] of KB) if(re.test(text)) return ans;return 'I can help with glass hardware, aluminium profiles, handles, locks, project quantities, quotations and general product guidance. Tell me what you are working on and the size/specification you have.'}
+function addMsg(t,who){const d=document.createElement('div');d.className='msg '+who;d.textContent=t;document.getElementById('messages').appendChild(d);document.getElementById('messages').scrollTop=99999}
+function quickAsk(t){addMsg(t,'user');setTimeout(()=>addMsg(botReply(t),'bot'),350)}
+document.getElementById('chatForm').addEventListener('submit',e=>{e.preventDefault();const i=document.getElementById('chatInput'),t=i.value.trim();if(!t)return;addMsg(t,'user');i.value='';setTimeout(()=>addMsg(botReply(t),'bot'),350)});
+
+const cursor=document.getElementById('tool-cursor');
+document.body.classList.add('cursor-ready');
+window.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
+document.addEventListener('mousedown',()=>cursor.classList.add('cursor-click'));document.addEventListener('mouseup',()=>cursor.classList.remove('cursor-click'));
+</script>
+</body>
+</html>
